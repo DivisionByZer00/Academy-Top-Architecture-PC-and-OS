@@ -47,7 +47,7 @@
 2. ls -la ~
 3. cd ~/linux-lab/notes (создайте папку, если нет)
 4. mkdir -p ~/linux-lab/homework
-5. cd ~/linux-lab/homework && pwd
+5. cd ~/linux-lab/homework && pwd    
 Для каждой команды: что вы ожидали и что получили (1 предложение).
 
 **Задание 2. Файлы (минимум 3 действия)**
