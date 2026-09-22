@@ -149,9 +149,9 @@
 
 **Задание 5. Симуляция диагностики (письменно)**    
 Опишите, на каком этапе цепочки (POST/прошивка / GRUB / ядро+initramfs / fstab / systemd) вы бы искали причину для:
-а) «No bootable medium»;
-б) «Kernel panic - not syncing: VFS: Unable to mount root fs»;
-в) «Welcome to emergency mode» после перезагрузки.
+а. «No bootable medium»;
+б. «Kernel panic - not syncing: VFS: Unable to mount root fs»;
+в. «Welcome to emergency mode» после перезагрузки.
 
 **Задание 6. Вывод (5-7 предложений)**    
 Что из загрузки стало понятнее? Какая команда самая полезная для отчёта после перезагрузки?
