@@ -326,4 +326,28 @@
 **Задание 5. Вывод (5-7 предложений)**    
 Какой режим сети у вашей VM и что нужно для SSH с хоста?
 
+## Homework 12
 
+### Тема: "Сервисы, диагностика и безопасность. systemd, журналы, firewall, backup"
+
+**Задание 1. systemd (4 пункта)**
+1. systemctl status ssh --no-pager | head -n 10
+2. systemctl --failed
+3. systemctl list-units --type=service --state=running | wc -l
+4. Чем active отличается от enabled?
+
+**Задание 2. journalctl**
+1. journalctl -b -p err --no-pager | head -n 20
+2. journalctl -u ssh -n 15 --no-pager
+3. Есть ли ошибки, требующие действий? (да/нет + почему)
+
+**Задание 3. Health-check**    
+Соберите таблицу: uptime, df / Use%, free available, systemctl --failed (пусто/нет).
+
+**Задание 4. Backup**
+1. tar -czf ~/hw12-backup.tar.gz -C ~ ops-workshop или ops-lab (если есть)
+2. tar -tzf ~/hw12-backup.tar.gz | head
+3. Как восстановить один файл из архива? (команда или шаги)
+
+**Задание 5. Итоговая симуляция (письменно)**    
+После apt upgrade (урок 3) ssh не принимает подключения. Опишите порядок из 5 шагов: journal, systemctl, ufw, snapshot, tar - что в каком порядке смотрите.
