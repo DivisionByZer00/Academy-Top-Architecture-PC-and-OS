@@ -342,7 +342,7 @@
 3. Есть ли ошибки, требующие действий? (да/нет + почему)
 
 **Задание 3. Health-check**    
-Соберите таблицу: uptime, df / Use%, free available, systemctl --failed (пусто/нет).
+    Соберите таблицу: uptime, df / Use%, free available, systemctl --failed (пусто/нет).
 
 **Задание 4. Backup**
 1. tar -czf ~/hw12-backup.tar.gz -C ~ ops-workshop или ops-lab (если есть)
